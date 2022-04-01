@@ -45,16 +45,16 @@ func howToCallOtherPackageMethod() {
 	hello.PrintHello()
 }
 
-//==========HOW TO CALL GLOBAL VARIABLE ==================
+//==========CALL GLOBAL VARIABLE ==================
 func howToCallpackageLevelVariable() {
 	fmt.Println("-----------GLOBAL VARIABLE-----------")
 	fmt.Println(packageLevelVariable)
 }
 
-//==========HOW TO INITIALIZE ==================
+//==========INITIALIZE ==================
 // 	LOCAL VARIABLE
 func initializeVariable() {
-	fmt.Println("-----------HOW TO INITIALIZE-----------")
+	fmt.Println("-----------INITIALIZE-----------")
 
 	var intVariable int // Declaration
 	intVariable = 45245 // Initialization
