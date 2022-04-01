@@ -27,7 +27,28 @@ func main() {
 
 	// mapDeclarationAndImplementation()
 
-	slicingArray()
+	// slicingArray()
+
+	sturctImplementation()
+
+}
+
+// Implementing Struct
+type Employee struct {
+	EmpId      int
+	EmpName    string
+	EmpMobiles []string
+}
+
+func sturctImplementation() {
+	fmt.Println("-----------Stuct or Class-----------")
+	var emp Employee = Employee{
+		EmpId:      1,
+		EmpName:    "Vijay",
+		EmpMobiles: []string{"8784574541", "7874574215"},
+	}
+	fmt.Println(emp)
+	fmt.Println("------------------------------------")
 
 }
 
