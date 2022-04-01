@@ -15,7 +15,7 @@ func main() {
 	var myVariable = "Hello, Variables" // Declaration wit Initialization
 	fmt.Println(myVariable)
 
-	//Calling hello method from greetings folder
+	//Calling hello method from hello folder
 	greeting.Hello("greetings.go\\greetings")
 
 	//Calling hello method from greetings folder
