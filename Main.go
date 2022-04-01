@@ -13,25 +13,56 @@ var packageLevelVariable int = 8784524
 func main() {
 	// BEFORE RUNNING THIS PLEASE READ README.MD FILE
 
-	initializeVariable()
+	// initializeVariable()
 
-	howToCallpackageLevelVariable()
+	// howToCallpackageLevelVariable()
 
-	howToCallGlobalLevelVariable()
+	// howToCallGlobalLevelVariable()
 
-	howToCallOtherPackageMethod()
+	// howToCallOtherPackageMethod()
 
-	constantImplementation()
+	// constantImplementation()
 
-	arrayDeclaration()
+	// arrayDeclaration()
+
+	mapDeclarationAndImplementation()
 
 }
 
+//KEY VALUE PAIR
+func mapDeclarationAndImplementation() {
+	fmt.Println("-----------Key Value Pair Implementation-----------")
+	// var emp = make(map[string]int) // declaration
+	var emp = map[string]int{
+		"Emp 1": 1,
+		"Emp 2": 2,
+	}
+	fmt.Println(emp)
+
+	fmt.Println("Search by Key ")
+	fmt.Println(emp["Emp 1"])
+
+	fmt.Println("Update value of Emp 1")
+	emp["Emp 1"] = 1000
+	fmt.Println(emp["Emp 1"])
+
+	fmt.Println("Add a new Record")
+	emp["Emp 3"] = 4000
+	fmt.Println(emp)
+}
+
+// ARRAY
 func arrayDeclaration() {
 	fmt.Println("-----------Array Implementation-----------")
 	var array [4]int = [4]int{1, 2, 3, 4}
+	fmt.Println(array) //  array[0]
+	fmt.Println(len(array))
 
-	fmt.Print(array) //  array[0]
+	fmt.Println("-----------N Number Array Implementation-----------")
+	var nArray = [...]int{1, 2, 3, 4, 5, 6, 7}
+	fmt.Println(nArray) //  array[0]
+	fmt.Println(len(nArray))
+
 }
 
 func constantImplementation() {
