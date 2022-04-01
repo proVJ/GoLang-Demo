@@ -14,18 +14,32 @@ func main() {
 	// BEFORE RUNNING THIS PLEASE READ README.MD FILE
 
 	initializeVariable()
+
 	howToCallpackageLevelVariable()
+
 	howToCallGlobalLevelVariable()
+
 	howToCallOtherPackageMethod()
 
 	constantImplementation()
 
+	arrayDeclaration()
+
+}
+
+func arrayDeclaration() {
+	fmt.Println("-----------Array Implementation-----------")
+	var array [4]int = [4]int{1, 2, 3, 4}
+
+	fmt.Print(array) //  array[0]
 }
 
 func constantImplementation() {
 	fmt.Println("-----------Constant Implementation-----------")
 	const d int = 45
-	fmt.Printf("Constant Value : %v", d)
+	// fmt.Printf("Constant Value : %v", d)
+	fmt.Println(d)
+
 }
 
 //==========CALLING PACKAGE LEVE VARIABLE ==================
