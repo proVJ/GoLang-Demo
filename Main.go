@@ -65,6 +65,7 @@ func arrayDeclaration() {
 
 }
 
+//Constant
 func constantImplementation() {
 	fmt.Println("-----------Constant Implementation-----------")
 	const d int = 45
@@ -73,14 +74,12 @@ func constantImplementation() {
 
 }
 
-//==========CALLING PACKAGE LEVE VARIABLE ==================
 //Calling Hello method from greetings folder
 func howToCallGlobalLevelVariable() {
 	fmt.Println("-----------CALLING Global LEVE VARIABLE-----------")
 	fmt.Println(greetings.GlobalVariable)
 }
 
-//==========CALLING METHOD FROM DIFFERENT FILE ==================
 //Calling Hello method from greetings folder
 func howToCallOtherPackageMethod() {
 	fmt.Println("-----------CALLING METHOD FROM DIFFERENT FILE-----------")
@@ -90,13 +89,12 @@ func howToCallOtherPackageMethod() {
 	hello.PrintHello()
 }
 
-//==========CALL GLOBAL VARIABLE ==================
+//GLOBAL VARIABLE
 func howToCallpackageLevelVariable() {
 	fmt.Println("-----------GLOBAL VARIABLE-----------")
 	fmt.Println(packageLevelVariable)
 }
 
-//==========INITIALIZE ==================
 // 	LOCAL VARIABLE
 func initializeVariable() {
 	fmt.Println("-----------INITIALIZE-----------")
