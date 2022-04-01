@@ -3,11 +3,13 @@ package main
 import (
 	"fmt"
 
-	greeting "./greetings"
-	hello "./hello"
+	"greetings"
+	"hello"
 )
 
 func main() {
+	// Before running this Please Read Me File
+
 	var intVariable int // Declaration
 	intVariable = 45245 // Initialization
 	fmt.Println(intVariable)
@@ -15,9 +17,9 @@ func main() {
 	var myVariable = "Hello, Variables" // Declaration wit Initialization
 	fmt.Println(myVariable)
 
-	//Calling hello method from greetings folder
-	greeting.Hello("greetings.go\\greetings")
+	//Calling Hello method from greetings folder
+	greetings.Hello("greetings.go greetings method")
 
-	//Calling hello method from hello folder
+	//Calling PrintHello method from hello folder
 	hello.PrintHello()
 }
