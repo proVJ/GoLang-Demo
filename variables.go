@@ -18,6 +18,6 @@ func main() {
 	//Calling hello method from greetings folder
 	greeting.Hello("greetings.go\\greetings")
 
-	//Calling hello method from hello
+	//Calling hello method from hello folder
 	hello.PrintHello()
 }
