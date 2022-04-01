@@ -31,7 +31,56 @@ func main() {
 
 	// sturctImplementation()
 
-	loopImplementation()
+	// loopImplementation()
+
+	// switchImplementation()
+
+	// interfaceImplementation()
+
+	deferImplementation()
+
+}
+
+//Defer
+func deferImplementation() {
+	fmt.Println("-----------Defer-----------")
+
+	defer fmt.Println("------------------------------------")
+	defer fmt.Println("-----------Close Connection-----------")
+
+	fmt.Println("Connection Open")
+	fmt.Println("Execute data")
+	fmt.Println("Execute Transaction")
+
+}
+
+// Interface
+func interfaceImplementation() {
+	fmt.Println("-----------Interface-----------")
+
+	var x interface{} = "test"
+	fmt.Println(x)
+	fmt.Println("------------------------------------")
+
+}
+
+// SWITCH
+func switchImplementation() {
+	fmt.Println("-----------SWITCH-----------")
+	// data := 3
+	switch data := 3; data {
+	case 1:
+		fmt.Println(data)
+	case 2, 3:
+		// case 2:
+		// case 3:
+		{
+			fmt.Println("data can be 2 or 3, the value is", data)
+		}
+	default:
+		fmt.Println("None, the value is ", data)
+	}
+	fmt.Println("------------------------------------")
 
 }
 
