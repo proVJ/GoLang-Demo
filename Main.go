@@ -46,8 +46,14 @@ func main() {
 	// fmt.Println("SUM", sum)
 
 	//retuns multiple value
-	sum, sub := multipleReturnValue(10, 8)
-	fmt.Println("SUM ", sum, "Sub", sub)
+	// sum, sub := multipleReturnValue(10, 8)
+	// fmt.Println("SUM ", sum, "Sub", sub)
+
+	//Anonymous Function
+	f := func() {
+		fmt.Println("Anonymous Function")
+	}
+	f()
 
 }
 
