@@ -25,7 +25,25 @@ func main() {
 
 	// arrayDeclaration()
 
-	mapDeclarationAndImplementation()
+	// mapDeclarationAndImplementation()
+
+	slicingArray()
+
+}
+
+//Array Slicing
+func slicingArray() {
+	fmt.Println("-----------Previous Initialization-----------")
+	// array
+	// var arr [4] int = [4] int{1,2,3,4}
+	var arr = [...]int{1, 2, 3, 4}
+	fmt.Println(arr)
+	fmt.Println("------------------------------------")
+
+	fmt.Println("-----------Array Slicint-----------")
+	//Slicing
+	var arr2 []int = []int{1, 2, 3, 4}
+	fmt.Println(arr2)
 
 }
 
@@ -39,16 +57,30 @@ func mapDeclarationAndImplementation() {
 	}
 	fmt.Println(emp)
 
+	fmt.Println("------------------------------------")
 	fmt.Println("Search by Key ")
 	fmt.Println(emp["Emp 1"])
+	fmt.Println("------------------------------------")
 
 	fmt.Println("Update value of Emp 1")
 	emp["Emp 1"] = 1000
 	fmt.Println(emp["Emp 1"])
+	fmt.Println("------------------------------------")
 
 	fmt.Println("Add a new Record")
 	emp["Emp 3"] = 4000
 	fmt.Println(emp)
+	fmt.Println("------------------------------------")
+
+	fmt.Println("Delete one Record")
+	delete(emp, "Emp 3")
+	fmt.Println(emp)
+	fmt.Println("------------------------------------")
+
+	fmt.Println("Check Existence Record")
+	_, isExist := emp["Emp 5"]
+	fmt.Println(isExist)
+
 }
 
 // ARRAY
