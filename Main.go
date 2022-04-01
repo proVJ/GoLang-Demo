@@ -44,7 +44,6 @@ func slicingArray() {
 	//Slicing
 	var arr2 []int = []int{1, 2, 3, 4}
 	fmt.Println(arr2)
-
 }
 
 //KEY VALUE PAIR
