@@ -18,19 +18,27 @@ func main() {
 	howToCallGlobalLevelVariable()
 	howToCallOtherPackageMethod()
 
+	constantImplementation()
+
+}
+
+func constantImplementation() {
+	fmt.Println("-----------Constant Implementation-----------")
+	const d int = 45
+	fmt.Printf("Constant Value : %v", d)
 }
 
 //==========CALLING PACKAGE LEVE VARIABLE ==================
 //Calling Hello method from greetings folder
 func howToCallGlobalLevelVariable() {
-	fmt.Println("====={CALLING Global LEVE VARIABLE}=====")
+	fmt.Println("-----------CALLING Global LEVE VARIABLE-----------")
 	fmt.Println(greetings.GlobalVariable)
 }
 
 //==========CALLING METHOD FROM DIFFERENT FILE ==================
 //Calling Hello method from greetings folder
 func howToCallOtherPackageMethod() {
-	fmt.Println("====={CALLING METHOD FROM DIFFERENT FILE}=====")
+	fmt.Println("-----------CALLING METHOD FROM DIFFERENT FILE-----------")
 	greetings.Hello("greetings.go greetings method")
 
 	//Calling PrintHello method from hello folder
@@ -39,17 +47,19 @@ func howToCallOtherPackageMethod() {
 
 //==========HOW TO CALL GLOBAL VARIABLE ==================
 func howToCallpackageLevelVariable() {
-	fmt.Println("====={GLOBAL VARIABLE}=====")
+	fmt.Println("-----------GLOBAL VARIABLE-----------")
 	fmt.Println(packageLevelVariable)
 }
 
 //==========HOW TO INITIALIZE ==================
 // 	LOCAL VARIABLE
 func initializeVariable() {
+	fmt.Println("-----------HOW TO INITIALIZE-----------")
+
 	var intVariable int // Declaration
 	intVariable = 45245 // Initialization
 	fmt.Println(intVariable)
-	fmt.Println("====={HOW TO INITIALIZE}=====")
-	var myVariable = "Hello, Variables" // Declaration wit Initialization
+
+	var myVariable = "Hello, Variables" // Declaration with Initialization
 	fmt.Println(myVariable)
 }
