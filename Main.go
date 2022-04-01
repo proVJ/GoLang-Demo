@@ -29,7 +29,20 @@ func main() {
 
 	// slicingArray()
 
-	sturctImplementation()
+	// sturctImplementation()
+
+	loopImplementation()
+
+}
+
+// LOOP
+func loopImplementation() {
+	fmt.Println("-----------LOOP-----------")
+
+	for i := 0; i < 10; i++ {
+		fmt.Printf("Loop Value - %v \n", i+1)
+	}
+	fmt.Println("------------------------------------")
 
 }
 
