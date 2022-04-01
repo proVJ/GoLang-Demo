@@ -37,8 +37,42 @@ func main() {
 
 	// interfaceImplementation()
 
-	deferImplementation()
+	// deferImplementation()
 
+	// functions(1, 2)
+
+	//retuns a value
+	// sum := nNumberParamerterSum(1, 2, 3)
+	// fmt.Println("SUM", sum)
+
+	//retuns multiple value
+	sum, sub := multipleReturnValue(10, 8)
+	fmt.Println("SUM ", sum, "Sub", sub)
+
+}
+
+func multipleReturnValue(i1, i2 int) (int, int) {
+	sum := i1 + i2
+	sub := i1 - i2
+	return sum, sub
+
+}
+
+func nNumberParamerterSum(vals ...int) int {
+	var sum int = 0
+	for i := 0; i < len(vals); i++ {
+		sum = sum + vals[i]
+	}
+
+	// for _, n := range vals {
+	// 	sum += n
+	// }
+	return sum
+
+}
+
+func functions(x int, y int) {
+	fmt.Println("SUM", (x + y))
 }
 
 //Defer
