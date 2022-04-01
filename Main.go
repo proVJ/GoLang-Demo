@@ -35,7 +35,7 @@ func main() {
 
 	// switchImplementation()
 
-	// interfaceImplementation()
+	interfaceImplementation()
 
 	// deferImplementation()
 
@@ -50,10 +50,18 @@ func main() {
 	// fmt.Println("SUM ", sum, "Sub", sub)
 
 	//Anonymous Function
-	f := func() {
-		fmt.Println("Anonymous Function")
+	// f := func() {
+	// 	fmt.Println("Anonymous Function")
+	// }
+	// f()
+
+	var stud StudentInterface = StudentStruct{
+		Name: "Student 1",
+		Id:   1,
 	}
-	f()
+
+	stud.ShowDetails()
+	stud.ShowName()
 
 }
 
@@ -92,6 +100,27 @@ func deferImplementation() {
 	fmt.Println("Execute data")
 	fmt.Println("Execute Transaction")
 
+}
+
+//=======================Inter Face anb Struct==================
+// its defines the behavior
+type StudentInterface interface {
+	ShowDetails()
+	ShowName() string
+}
+
+// its define the fields and properdy
+type StudentStruct struct {
+	Name string
+	Id   int
+}
+
+func (stud StudentStruct) ShowDetails() {
+	fmt.Println("Student Name", stud.Name, " Student ID", stud.Id)
+}
+
+func (stud StudentStruct) ShowName() {
+	fmt.Println("Student Name", stud.Name)
 }
 
 // Interface
