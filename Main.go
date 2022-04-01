@@ -8,19 +8,20 @@ import (
 )
 
 // PACKAGE LEVE VARIABLE (calmel case)
-var globalVariable int = 8784524
+// this variable will accessible to this package only
+var packageLevelVariable int = 8784524
 
 func main() {
 	// BEFORE RUNNING THIS PLEASE READ README.MD FILE
 
 	initializeVariable()
-	howToCallGlobalVariable()
-	howToCallPackageLevelVariable()
+	howToCallpackageLevelVariable()
+	howToCallGlobalLevelVariable()
 	howToCallOtherPackageMethod()
 
 }
 
-func howToCallPackageLevelVariable() {
+func howToCallGlobalLevelVariable() {
 	//==========CALLING PACKAGE LEVE VARIABLE ==================
 	//Calling Hello method from greetings folder
 	fmt.Println("====={CALLING Global LEVE VARIABLE}=====")
@@ -37,10 +38,10 @@ func howToCallOtherPackageMethod() {
 	hello.PrintHello()
 }
 
-func howToCallGlobalVariable() {
+func howToCallpackageLevelVariable() {
 	//==========HOW TO CALL GLOBAL VARIABLE ==================
 	fmt.Println("====={GLOBAL VARIABLE}=====")
-	fmt.Println(globalVariable)
+	fmt.Println(packageLevelVariable)
 }
 
 func initializeVariable() {

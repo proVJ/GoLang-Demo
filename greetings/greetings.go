@@ -9,5 +9,10 @@ func Hello(name string) string {
 	return message
 }
 
-// PACKAGE LEVEL VARIABLE (pascal case)
-var GlobalVariable = "PACKAGE LEVE VARIABLE"
+// GLOBAL LEVEL VARIABLE (pascal case)
+// this variable will accessible for all packages
+var GlobalVariable = "GLOBAL LEVE VARIABLE"
+
+// PACKAGE LEVE VARIABLE (calmel case)
+// this variable will accessible to this package only
+var packageLevelVariable int = 8784524
