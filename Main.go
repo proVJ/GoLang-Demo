@@ -50,18 +50,19 @@ func main() {
 	// fmt.Println("SUM ", sum, "Sub", sub)
 
 	//Anonymous Function
-	// f := func() {
-	// 	fmt.Println("Anonymous Function")
-	// }
-	// f()
-
-	var stud StudentInterface = StudentStruct{
-		Name: "Student 1",
-		Id:   1,
+	f := func() {
+		fmt.Println("Anonymous Function")
 	}
+	f()
 
-	stud.ShowDetails()
-	stud.ShowName()
+	// InterFace Implementation
+	// var stud StudentInterface = StudentStruct{
+	// 	Name: "Student 1",
+	// 	Id:   1,
+	// }
+
+	// stud.ShowDetails()
+	// stud.ShowName()
 
 }
 
