@@ -8,3 +8,6 @@ func Hello(name string) string {
 	message := fmt.Sprintf("Hi, %v. Welcome!", name)
 	return message
 }
+
+// PACKAGE LEVEL VARIABLE (pascal case)
+var GlobalVariable = "PACKAGE LEVE VARIABLE"

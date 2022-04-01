@@ -7,7 +7,7 @@ import (
 	"hello"
 )
 
-// GLOBAL VARIABLE
+// PACKAGE LEVE VARIABLE
 var globalVariable int = 8784524
 
 func main() {
@@ -34,4 +34,10 @@ func main() {
 
 	//Calling PrintHello method from hello folder
 	hello.PrintHello()
+
+	//==========CALLING PACKAGE LEVE VARIABLE ==================
+	//Calling Hello method from greetings folder
+	fmt.Println("====={CALLING Global LEVE VARIABLE}=====")
+	fmt.Println(greetings.GlobalVariable)
+
 }
