@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"greetings"
 	"hello"
 )
@@ -21,16 +20,16 @@ func main() {
 
 }
 
+//==========CALLING PACKAGE LEVE VARIABLE ==================
+//Calling Hello method from greetings folder
 func howToCallGlobalLevelVariable() {
-	//==========CALLING PACKAGE LEVE VARIABLE ==================
-	//Calling Hello method from greetings folder
 	fmt.Println("====={CALLING Global LEVE VARIABLE}=====")
 	fmt.Println(greetings.GlobalVariable)
 }
 
+//==========CALLING METHOD FROM DIFFERENT FILE ==================
+//Calling Hello method from greetings folder
 func howToCallOtherPackageMethod() {
-	//==========CALLING METHOD FROM DIFFERENT FILE ==================
-	//Calling Hello method from greetings folder
 	fmt.Println("====={CALLING METHOD FROM DIFFERENT FILE}=====")
 	greetings.Hello("greetings.go greetings method")
 
@@ -38,15 +37,15 @@ func howToCallOtherPackageMethod() {
 	hello.PrintHello()
 }
 
+//==========HOW TO CALL GLOBAL VARIABLE ==================
 func howToCallpackageLevelVariable() {
-	//==========HOW TO CALL GLOBAL VARIABLE ==================
 	fmt.Println("====={GLOBAL VARIABLE}=====")
 	fmt.Println(packageLevelVariable)
 }
 
+//==========HOW TO INITIALIZE ==================
+// 	LOCAL VARIABLE
 func initializeVariable() {
-	//==========HOW TO INITIALIZE ==================
-	// 	LOCAL VARIABLE
 	var intVariable int // Declaration
 	intVariable = 45245 // Initialization
 	fmt.Println(intVariable)
