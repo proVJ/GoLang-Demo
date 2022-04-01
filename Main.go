@@ -46,7 +46,6 @@ func howToCallGlobalVariable() {
 func initializeVariable() {
 	//==========HOW TO INITIALIZE ==================
 	// 	LOCAL VARIABLE
-
 	var intVariable int // Declaration
 	intVariable = 45245 // Initialization
 	fmt.Println(intVariable)
