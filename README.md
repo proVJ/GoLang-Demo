@@ -7,3 +7,4 @@
 4) Open Terminal from VS Code or CMD or Window Power Shell
 5) Run command "go run Main.go"
 
+Happy Codding
