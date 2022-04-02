@@ -115,7 +115,9 @@ type StudentStruct struct {
 }
 
 func (stud StudentStruct) ShowDetails() {
-	fmt.Println("Student Name", stud.Name, " Student ID", stud.Id)
+	fmt.Println("-----------Student Details-----------")
+	fmt.Println("Student ID: ", stud.Id, "\nStudent Name:", stud.Name)
+	fmt.Println("------------------------------------")
 }
 
 func (stud StudentStruct) ShowName() string {
@@ -141,7 +143,6 @@ func switchImplementation() {
 		fmt.Println("None, the value is ", data)
 	}
 	fmt.Println("------------------------------------")
-
 }
 
 // LOOP
