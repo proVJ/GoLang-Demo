@@ -35,8 +35,6 @@ func main() {
 
 	// switchImplementation()
 
-	interfaceImplementation()
-
 	// deferImplementation()
 
 	// functions(1, 2)
@@ -124,15 +122,7 @@ func (stud StudentStruct) ShowName() string {
 	return stud.Name
 }
 
-// Interface
-func interfaceImplementation() {
-	fmt.Println("-----------Interface-----------")
-
-	var x interface{} = "test"
-	fmt.Println(x)
-	fmt.Println("------------------------------------")
-
-}
+//================================================================
 
 // SWITCH
 func switchImplementation() {
