@@ -61,6 +61,7 @@ func main() {
 
 	obj.ShowDetails()
 	fmt.Println(obj.ShowName())
+	fmt.Println("------------------------------------")
 
 }
 
