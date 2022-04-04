@@ -6,20 +6,16 @@ import (
 	"hello"
 )
 
-// PACKAGE LEVE VARIABLE (calmel case)
-// this variable will accessible to this package only
-var packageLevelVariable int = 8784524
-
 func main() {
 	// BEFORE RUNNING THIS PLEASE READ README.MD FILE
 
 	// initializeVariable()
 
-	// howToCallpackageLevelVariable()
+	// packageLevelVariable()
 
-	// howToCallGlobalLevelVariable()
+	// GlobalLevelVariable()
 
-	// howToCallOtherPackageMethod()
+	// callingOtherPackageMethod()
 
 	// constantImplementation()
 
@@ -72,6 +68,7 @@ func multipleReturnValue(i1, i2 int) (int, int) {
 
 }
 
+// param function
 func nNumberParamerterSum(vals ...int) int {
 	var sum int = 0
 	for i := 0; i < len(vals); i++ {
@@ -251,13 +248,13 @@ func constantImplementation() {
 }
 
 //Calling Hello method from greetings folder
-func howToCallGlobalLevelVariable() {
+func GlobalLevelVariable() {
 	fmt.Println("-----------CALLING Global LEVE VARIABLE-----------")
 	fmt.Println(greetings.GlobalVariable)
 }
 
 //Calling Hello method from greetings folder
-func howToCallOtherPackageMethod() {
+func callingOtherPackageMethod() {
 	fmt.Println("-----------CALLING METHOD FROM DIFFERENT FILE-----------")
 	greetings.Hello("greetings.go greetings method")
 
@@ -265,10 +262,14 @@ func howToCallOtherPackageMethod() {
 	hello.PrintHello()
 }
 
-//GLOBAL VARIABLE
-func howToCallpackageLevelVariable() {
+// PACKAGE LEVE VARIABLE (calmel case)
+// this variable will accessible to this package only
+var packageVariable int = 8784524
+
+//Package Level  VARIABLE
+func packageLevelVariable() {
 	fmt.Println("-----------GLOBAL VARIABLE-----------")
-	fmt.Println(packageLevelVariable)
+	fmt.Println(packageVariable)
 }
 
 // 	LOCAL VARIABLE
