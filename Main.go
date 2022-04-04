@@ -232,7 +232,9 @@ func arrayDeclaration() {
 	fmt.Println(len(array))
 
 	fmt.Println("-----------N Number Array Implementation-----------")
-	var nArray = [...]int{1, 2, 3, 4, 5, 6, 7}
+
+	// var nArray = [...]int{1, 2, 3, 4, 5, 6, 7}
+	nArray := [...]int{1, 2, 3, 4, 5, 6, 7}
 	fmt.Println(nArray) //  array[0]
 	fmt.Println(len(nArray))
 
